@@ -1,0 +1,91 @@
+User can choose between 
+  Tenant
+  prospect
+  Landlord
+  Broker
+
+If the Landlord wants to register should fill the following fields
+  Name and Last Name
+  Email
+
+Once the landlord was registered, should update the following fields
+  Full Name (This name will be used in the contract)
+  Address (this address will be used in the contract)
+  Phone
+
+Once all the mandatory fields are filled, now the user will start creating the unit to rent
+  Building Name
+  Building Address
+  Postal Code
+  Unit Number (Hide by default, at least the user can mark as visible field)
+  Parking Number (Hide by default, at least the user can mark as visible field)
+  Storage Room Number (Hide by default, at least the user can mark as visible field)
+  m2
+  Floor
+  View (Internal External)
+  Location (N, S, E, W)
+  Tipology
+
+Once the unit was created, the user will start creating the rent process 
+  Building Unit 
+  Publish Date
+  Rent Start Date
+  Rend End Date
+  Description 
+  Additional Features
+  Photos
+  Requirements
+  Status
+  rent price
+  System (1 rent in advance, 2 guaranttee)
+
+Request Information, user can send a link with the information and select apply or reject
+  Unit for Rent
+  Landlord Name
+  Option (Apply, more information, reject)
+
+If prospect apply the link, should create an user with name, email and password or sign in if has an account
+  option to send a question for the unit
+  propose a new rent price
+  schedule a visit
+
+If the user wants to schedule a visit, can select from a calendar the dates and times available, otherwise propose a new one
+  submitt visit 
+
+The landlor receive the visit submitted and accept, propose a new one or reject 
+  if accept, user receive an email with the date, exact address and a code 
+
+The landlord propose a new date and time, prospect receive it by email, accept or cancel 
+  prospect accept and both receive an email with the information
+
+prospect show interest, he/she wans to apply and go to the platform to upload all the documentation
+  3 last payslip 
+  Score Report
+  Work statement
+  optional documents (Bank Statement, Banks Reports, others (choose name and upload the file)
+
+Landlord ask for more question or documents
+  check all of them
+
+Landlor accept tenant
+  send an email accepting a prospect
+  ask for a confirmation for personal information to redact contract
+  Landlor send a draft contract to be checked for the tenant
+  ask for the deposit and landlord send the account number
+  tenant upload comprobant of transaction 
+  both can see a windows with all the steps checked before schedule notary appointment
+  landlor send the appointment options for tenant
+  tenant accept the contract 
+  once both sign the contract at notary, landlor upload the contract in the system
+  tenant sign document with knowledge how receive the unit and keys 
+
+landlor select unit rented
+  send an email to the business administration informing that has a new tenant 
+
+  
+  
+  
+  
+  
+  
+  
