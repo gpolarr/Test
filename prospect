@@ -13,10 +13,11 @@ Step 1:
 Step 2:
   Roles:
     Tenant (Put the code received)
-    Landlord (go step 3)
+    Landlord (Put the code received and go step 3, if receive a code, broker invite the landlord, if not, the landlord create it itself)
     Broker (add agency as optional field)
     Assistant (Put the code received)
     Admin (internal - company)
+
 Confirm registration email by active account between 24 hours, if not confirm should active account by email to use the features, it shows a pop up saying, confirm/active your account
 
 Step 3:
@@ -38,20 +39,37 @@ Step 3:
 
 *District, city and countries should be populated automatically
 
+Note: as an admin, i can create different roles and type of roles
+  Type of roles:
+    Organizational
+    Customers
+
+Use case: as a landlord i want to create a unit for rent, the unit creation should has 2 steps
+  Step 1:
+    Registration Unit:
+      Building Name (Create a new one or select from the list of buildings)
+      Building Address 
+      Postal Code (Optional, dependes of the country)
+      Unit Number 
+      Unit m2
+      Parking (Yes/No)
+      Parking Number (if yes)
+      Storage Room (Yes/No)
+      Storage Room Number (Optional)
+      Floor
+      View (Optional,Internal, External)
+      Location (Optional, N, S, E, W)
+      Tipology (Preloaded list + other, option to write the other)
+Step 2:
+    Adittional Fields:
+      Year Construction
+      Developer
+      Code (for broker)
 
 
-Once all the mandatory fields are filled, now the user will start creating the unit to rent
-  Building Name
-  Building Address
-  Postal Code
-  Unit Number (Hide by default, at least the user can mark as visible field)
-  Parking Number (Hide by default, at least the user can mark as visible field)
-  Storage Room Number (Hide by default, at least the user can mark as visible field)
-  m2
-  Floor
-  View (Internal External)
-  Location (N, S, E, W)
-  Tipology
+      
+
+
 
 Once the unit was created, the user will start creating the rent process 
   Building Unit 
