@@ -64,25 +64,39 @@ Step 2:
     Adittional Fields:
       Year Construction
       Developer
-      Code (for broker)
+      Municipals Taxes
+      Federal Taxes
+      Utilities cost
+      Requirements for rent (minimum) 
+      Code (for broker) - landlord can regenerate codes -
+Step 3:
+    Photos:
+      Upload photos (Optional)
+      Crated*
+      Updated*
 
-
-      
-
-
-
-Once the unit was created, the user will start creating the rent process 
-  Building Unit 
-  Publish Date
-  Rent Start Date
-  Rend End Date
-  Description 
-  Additional Features
-  Photos
-  Requirements
-  Status
-  rent price
-  System (1 rent in advance, 2 guaranttee)
+Use case: publish the unit for rent, select unit if has more than 1
+  *Building Unit Torremar 404 (Unit hided)
+  *Rent Price 1600
+  *Utilities (Populated from the Building Unit) 200
+  Taxes (Populated from the building unit) 120
+  *Description Unit Rent an amazing apartment
+  *Furnitured (Full, Semi, No) Semi
+  *Description if is semi or full 1 bed and closet
+  Start Date (possible Date) September 1st
+  Long of contract (1 or 2 years) 1 year
+  *Requirements for rent (populated from the building unit)
+  *Adittional Requirements (filled in this form) (No Pets)
+  Publish Date (select the date to publish) August 8th
+  *Photos
+    Choose from building unit (yes)
+    Upload own photos
+  Status (Rented, Vacancy, busy) busy
+  Broker Comission (Same rent or change it)
+  *System (1 rent in advance + choose month guarantee) 1 rent in advance + 2 guarantee
+  
+  
+The link shared allow to see all the fields with *, and allow to apply and ask for more information
 
 Request Information, user can send a link with the information and select apply or reject
   Unit for Rent
