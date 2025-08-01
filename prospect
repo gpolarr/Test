@@ -1,17 +1,44 @@
-User can choose between 
+Registration FLow:
+
+*fields for internal purpose db
+
+Step 1:
+  Registration:
+    Name & Last Name
+    Email
+    Password
+    Repeat Password
+    created*
+
+Step 2:
+  Roles:
+    Tenant (Put the code received)
+    Landlord (go step 3)
+    Broker (add agency as optional field)
+    Assistant (Put the code received)
+    Admin (internal - company)
+Confirm registration email by active account between 24 hours, if not confirm should active account by email to use the features, it shows a pop up saying, confirm/active your account
+
+Step 3:
+  Complete Profile:
+    Full Name (Only for contracts)
+    Address (Only for contracts)
+    City
+    Phone
+    created*
+    Updated*
+
+*Current User Roles
   Tenant
-  prospect
+  Prospect
   Landlord
-  Broker
+  Broker 
+  Assistant (Tenant, Broker or Landlord)
+  Admin (Platform)
 
-If the Landlord wants to register should fill the following fields
-  Name and Last Name
-  Email
+*District, city and countries should be populated automatically
 
-Once the landlord was registered, should update the following fields
-  Full Name (This name will be used in the contract)
-  Address (this address will be used in the contract)
-  Phone
+
 
 Once all the mandatory fields are filled, now the user will start creating the unit to rent
   Building Name
