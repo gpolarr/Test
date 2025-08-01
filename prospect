@@ -97,11 +97,38 @@ Use case: publish the unit for rent, select unit if has more than 1
   
   
 The link shared allow to see all the fields with *, and allow to apply and ask for more information
+if the user clic apply, it ask for create an account to apply and get a code (try to get automatically the code associated to the landlord or broker)
+  the landlord or broker receive an email saying that there was an interest for user xxxx 
 
-Request Information, user can send a link with the information and select apply or reject
-  Unit for Rent
-  Landlord Name
-  Option (Apply, more information, reject)
+Apply option:
+  Schedule a visit: Choose date and time for calendar , at least 2 options and allow add comments in the visit booking 
+Ask for more information:
+  form for questions as a chat 
+  option to schedule a visit 
+
+after the visit, if the user is interesed, the broker or landlor allow charge documents in the app 
+  the prospect receive an email saying, you can start uploading your documents here and notification in the app 
+
+Prospect see the screen with options to upload documents, 
+  Payslips (tenant and/or aval)
+  Score report (tenant and/or aval)
+  Bank Statements
+  Work documents
+  sunat documents
+  Other documents
+
+If tenant ask for reduce rent price, broker send a notification to landlord sending profile + new rent price 
+Landlor approve or reject that price, broker is notified in that case and send a message to prospect 
+
+if tenant upload documents and is ok with the price, the landlord ask for more document, approve profile or reject profile with a message 
+  Approve:
+  with broker: is informed and inform the tenant that his profile has approved, and prospect receive a notification saying congrats 
+  without broker: landlord inform prospect that his profile has been approved and prospect receive a notification saying congrats...
+
+  more documents:
+  with and without broker ask for more documents 
+
+
 
 If prospect apply the link, should create an user with name, email and password or sign in if has an account
   option to send a question for the unit
