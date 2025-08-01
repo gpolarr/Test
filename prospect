@@ -82,10 +82,359 @@ Landlor accept tenant
 landlor select unit rented
   send an email to the business administration informing that has a new tenant 
 
+
+Monthly Process
+  Tenant has a dashboard with the deposit days for the long of the contract with status in this case, the first paid, the second one pendent
+    Paid with cheques, you will receive a notification 2 days before the cheque is going to be requested to paid 
+    paid with transferences, you will receive a notification 2 days before the due date to remember pay date
+
+  Tenant must upload screenshot with the transfer or any comprobant to the system, if dont upload the screenshot, landlord can upload the transfer or any comprobant 
+  Tenant can requeste a comprobant for rent (optional) it generate a pdf with the information. 
+  Tenant can see how many months left before the contract expire and how many months to the notice in advance for extension 
+  Tenant can upload requests directly from the system
+    Place
+    issue description
+    issue date
+    issue photos
+    issue documentation
+    issue status
+    issue action 
+
+  landlord can see behaviour paid of tenant for each month and customize rules lights as red, yellow and green
+  landlor create and send the notice in advance for increase rent to be accepted or rejected
+
+landlor or tenant can upload utilities monthly
+landlord can send an email to the admin company asking for utilities status if it is not included in the rent to update the dashboard to know the behaviour of the tenant 
+
+if tenant left the unit, it will be able to restrict the documentation and use photos and documentation uploaded before for a new one
+
+Tenant can create a profile tenant for new building, he can share his behaviour payment and all the history needed 
+
+landlor can do all of previous step or if hire a broker the broker act in representation of the landlor with similar logic but landlor can audit all 
+
+
+
+
+# Rental Management System – Process Flow & Features
+
+## 1. User Roles
+- **Tenant**
+- **Prospect**
+- **Landlord**
+- **Broker**
+
+---
+
+## 2. Registration & Profile Management
+
+### Landlord Registration
+- **Step 1:** Register with:
+  - Name & Last Name
+  - Email
+- **Step 2:** Complete profile:
+  - Full Name (for contract)
+  - Address (for contract)
+  - Phone
+
+### Prospect/Tenant Registration
+- Register with:
+  - Name & Last Name
+  - Email
+  - Password
+
+### Broker Registration
+- Register with:
+  - Name & Last Name
+  - Email
+  - Agency (optional)
+  - Phone
+
+---
+
+## 3. Property & Unit Management
+
+### Add New Unit
+- Building Name
+- Building Address
+- Postal Code
+- Unit Number *(optional/hidden by default)*
+- Parking Number *(optional/hidden by default)*
+- Storage Room Number *(optional/hidden by default)*
+- Area (m²)
+- Floor
+- View (Internal/External)
+- Location (N, S, E, W)
+- Typology (e.g., Studio, 1BR, 2BR)
+
+---
+
+## 4. Rent Listing Process
+
+- Select Unit
+- Publish Date
+- Rent Start Date
+- Rent End Date
+- Description
+- Additional Features
+- Photos
+- Requirements
+- Status (Available, Reserved, Rented, etc.)
+- Rent Price
+- Payment System (e.g., 1 month in advance, 2 months guarantee)
+
+---
+
+## 5. Inquiry & Application
+
+- User can request info or apply via a link:
+  - Unit for Rent
+  - Landlord Name
+  - Option: Apply, More Info, Reject
+
+- If applying:
+  - Register or Sign In
+  - Option to:
+    - Send questions
+    - Propose new rent price
+    - Schedule a visit
+
+---
+
+## 6. Visit Scheduling
+
+- Select available dates/times from calendar or propose new
+- Submit visit request
+- Landlord receives request:
+  - Accept, Propose new, or Reject
+- Notifications sent via email for all updates
+
+---
+
+## 7. Application & Documentation
+
+- Prospect uploads:
+  - Last 3 payslips
+  - Credit Score Report
+  - Work Statement
+  - Optional: Bank Statement, Other documents
+
+- Landlord can request more info or documents
+
+---
+
+## 8. Approval & Contract
+
+- Landlord accepts tenant:
+  - Email confirmation
+  - Confirm personal info for contract
+  - Send draft contract for review
+  - Request deposit (provide account number)
+  - Tenant uploads payment proof
+  - Both see checklist of steps before notary appointment
+  - Landlord proposes notary appointment options
+  - Tenant accepts contract
+  - After signing at notary, landlord uploads signed contract
+  - Tenant signs receipt for keys/unit
+
+- Mark unit as rented
+- Notify business administration
+
+---
+
+## 9. Monthly Process
+
+- Tenant dashboard:
+  - Payment schedule & status (paid, pending)
+  - Payment reminders (cheque/transfer)
+  - Upload payment proof
+  - Request rent receipt (PDF)
+  - See months left on contract & notice period for extension
+  - Submit maintenance requests (with place, description, date, photos, docs, status, actions)
+
+- Landlord dashboard:
+  - Track tenant payment behavior (customizable status: red/yellow/green)
+  - Send rent increase notice (accept/reject)
+  - Upload/view utilities
+  - Request admin company for utility status
+
+---
+
+## 10. Move-Out & History
+
+- Restrict access to documentation after move-out
+- Reuse photos/docs for new listings
+- Tenant can create/share rental history profile for new landlords
+
+---
+
+## 11. Broker Role
+
+- Broker can perform all landlord actions if authorized
+- Landlord can audit broker actions
+
+---
+
+## 12. Additional Suggestions
+
+- **Notifications:** Email/SMS for all important actions (visits, payments, contract steps)
+- **Audit Logs:** Track all actions for transparency
+- **Document Templates:** Auto-generate contracts, receipts, notices
+- **Multi-language Support:** For broader user base
+- **Mobile App:** For easier access and notifications
+- **Analytics Dashboard:** For landlords to track occupancy, payments, etc.
+
+---
+
+## 13. Process Flow Diagram (Suggested)
+
+1. **User Registration** → 2. **Profile Completion** → 3. **Unit Creation** → 4. **Listing Publication** → 5. **Inquiry/Application** → 6. **Visit Scheduling** → 7. **Document Submission** → 8. **Approval & Contract** → 9. **Monthly Management** → 10. **Move-Out/History**
+
+---
+
+Let me know if you want a visual diagram or a more detailed workflow for any specific part!
   
-  
-  
-  
-  
-  
-  
+  1. Relational Database (SQL) Model
+Entities & Relationships:
+
+User (id, role, name, email, password, etc.)
+LandlordProfile (user_id, full_name, address, phone)
+TenantProfile (user_id, ...optional fields...)
+BrokerProfile (user_id, ...optional fields...)
+Building (id, name, address, postal_code)
+Unit (id, building_id, unit_number, parking_number, storage_number, area_m2, floor, view, location, typology, is_visible)
+Listing (id, unit_id, landlord_id, publish_date, rent_start, rent_end, description, features, photos, requirements, status, rent_price, payment_system)
+Application (id, listing_id, prospect_id, status, proposed_rent, questions, visit_id)
+Visit (id, application_id, date, status, proposed_by)
+Document (id, user_id, application_id, type, file_path, uploaded_at)
+Contract (id, listing_id, tenant_id, landlord_id, signed_at, status, contract_file)
+Payment (id, contract_id, tenant_id, amount, due_date, paid_date, proof_file, status)
+MaintenanceRequest (id, unit_id, tenant_id, description, date_reported, status, photos, docs, actions)
+Utility (id, unit_id, month, amount, uploaded_by, file_path)
+AuditLog (id, user_id, action, timestamp, details)
+Relationships:
+
+User can have one of several profiles (Landlord, Tenant, Broker).
+Landlord owns Building and Unit.
+Unit belongs to a Building.
+Listing is for a Unit by a Landlord.
+Application is made by a Prospect for a Listing.
+Visit is linked to an Application.
+Contract is between Landlord and Tenant for a Listing.
+Payment is for a Contract.
+MaintenanceRequest is for a Unit by a Tenant.
+Utility is for a Unit.
+
+2. NoSQL (Document-based, e.g., MongoDB) Model
+Collections & Example Documents:
+
+users
+{
+  "_id": "...",
+  "role": "landlord",
+  "name": "...",
+  "email": "...",
+  "password": "...",
+  "profile": {
+    "full_name": "...",
+    "address": "...",
+    "phone": "..."
+  }
+}
+buildings
+{
+  "_id": "...",
+  "name": "...",
+  "address": "...",
+  "postal_code": "...",
+  "units": [
+    {
+      "unit_id": "...",
+      "unit_number": "...",
+      "parking_number": "...",
+      "storage_number": "...",
+      "area_m2": 80,
+      "floor": 3,
+      "view": "external",
+      "location": "N",
+      "typology": "2BR",
+      "is_visible": true
+    }
+  ]
+}
+listings
+{
+  "_id": "...",
+  "unit_id": "...",
+  "landlord_id": "...",
+  "publish_date": "...",
+  "rent_start": "...",
+  "rent_end": "...",
+  "description": "...",
+  "features": ["..."],
+  "photos": ["..."],
+  "requirements": ["..."],
+  "status": "available",
+  "rent_price": 1200,
+  "payment_system": "1 month advance, 2 guarantee"
+}
+applications
+{
+  "_id": "...",
+  "listing_id": "...",
+  "prospect_id": "...",
+  "status": "pending",
+  "proposed_rent": 1150,
+  "questions": ["..."],
+  "visit": {
+    "date": "...",
+    "status": "accepted",
+    "proposed_by": "prospect"
+  },
+  "documents": [
+    {"type": "payslip", "file": "..."},
+    {"type": "score_report", "file": "..."}
+  ]
+}
+contracts
+{
+  "_id": "...",
+  "listing_id": "...",
+  "tenant_id": "...",
+  "landlord_id": "...",
+  "signed_at": "...",
+  "status": "active",
+  "contract_file": "..."
+}
+payments
+{
+  "_id": "...",
+  "contract_id": "...",
+  "tenant_id": "...",
+  "amount": 1200,
+  "due_date": "...",
+  "paid_date": "...",
+  "proof_file": "...",
+  "status": "paid"
+}
+maintenance_requests
+{
+  "_id": "...",
+  "unit_id": "...",
+  "tenant_id": "...",
+  "description": "...",
+  "date_reported": "...",
+  "status": "open",
+  "photos": ["..."],
+  "docs": ["..."],
+  "actions": ["..."]
+}
+utilities
+{
+  "_id": "...",
+  "unit_id": "...",
+  "month": "2025-08",
+  "amount": 100,
+  "uploaded_by": "...",
+  "file_path": "..."
+}
+Notes:
