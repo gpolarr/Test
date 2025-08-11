@@ -1,3 +1,16 @@
+Building:
+  Building_id
+  name
+  address
+  city
+  district
+  region/state
+  country
+  postal_code (*optional) it doesnt apply for southamerica countries
+  real_estate
+  year_built
+
+
 Registration FLow:
 
 *fields for internal purpose db
